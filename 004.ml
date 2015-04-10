@@ -5,8 +5,7 @@ let is_palindrome x =
   let rec step n =
     if n < 10 then
       r := n :: !r
-    else
-      begin
+    else begin
         r := (n mod 10):: !r;
         step (n/10);
       end in
