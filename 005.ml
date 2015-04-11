@@ -24,7 +24,7 @@ let smallest_multiple l h =
       check := false;
       res := !idx
       end;
-    idx := !idx + 1;
+    incr idx;
   done;
   !res
 

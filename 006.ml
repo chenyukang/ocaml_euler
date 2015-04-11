@@ -1,5 +1,4 @@
 
-
 let solve n =
   let s1 = ref 0 in
   let s2 = ref 0 in 
@@ -18,4 +17,3 @@ let () =
   assert(solve 10 = 2640);
   assert(solve 100 = 25164150);
   
-    
