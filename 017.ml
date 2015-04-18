@@ -50,7 +50,7 @@ let under_100 n =
       Printf.sprintf "%s-%s" prefix (under_10 (n mod 10))
     else
       prefix
-                     
+
 
 let under_1000 n =
   if n < 100 then
@@ -63,11 +63,11 @@ let under_1000 n =
       prefix
 
 let to_word n =
-  if n < 1000 then 
+  if n < 1000 then
     under_1000 n
   else
     "one thousand"
-      
+
 let length n =
   let filter s =
     String.filter s (fun x -> x <> '-' && x <> ' ') in
@@ -82,14 +82,3 @@ let solve n =
 
 let () =
   assert((solve 1000) = 21124);
-    
-                    
-                
-                  
-    
-               
-                    
-                   
-                     
-
-                  

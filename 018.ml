@@ -1,9 +1,9 @@
 
 open Core.Std
-       
-       
-            
-let solve  =                                            
+
+
+
+let solve  =
   let input = "75
                95 64
                17 47 82
@@ -21,7 +21,7 @@ let solve  =
                04 62 98 27 23 09 70 98 73 93 38 53 60 04 23" in
   let get arr i j =
     Array.get (Array.get arr i) j in
-  
+
   let lines = String.split (String.strip input) '\n' in
   let arr = Array.of_list (List.map lines (fun l ->
                               let ss = (String.split (String.strip l) ' ') in
@@ -33,11 +33,10 @@ let solve  =
     else
       let left = (get arr i j) + (get_max (i + 1) j) and
           right = (get arr i j) + (get_max (i + 1) (j + 1)) in
-      Int.max left right in 
-  get_max 0 0 
-      
-  
+      Int.max left right in
+  get_max 0 0
+
+
 
 let () =
   assert(solve = 1074);
-                    
