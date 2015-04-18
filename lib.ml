@@ -83,8 +83,7 @@ let factors n limit =
     | _ -> failwith "need more primes" in
   let _ = it pps in
   !res
-   
-   
+      
 let solve n =
   let ans = ref 0 in 
   let i = ref 1 in
