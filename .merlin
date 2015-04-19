@@ -1,2 +1,2 @@
-PKG core lwt async uri yojson textwrap cohttp pipe thread wapper
+PKG core lwt async uri yojson textwrap cohttp pipe thread wapper batteries
 B +threads
