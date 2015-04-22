@@ -32,3 +32,6 @@ let solve n =
       (is_palid s) && (is_palid b) in
   let valid = List.filter check range in
   List.sum valid;;
+
+let () =
+  assert(solve 1000000 = 872187);;
